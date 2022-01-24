@@ -15,22 +15,21 @@
  *
  */
 
-package com.example.recyclerviewlibrarydemo.network
+package com.example.demonetworklibrary
 
-import android.os.Parcel
 import android.os.Parcelable
+import com.google.gson.annotations.SerializedName
 import kotlinx.android.parcel.Parcelize
 
 @Parcelize
 data class MarsProperty(
-        val id: String,
+    val id: String,
+    @SerializedName("img_src") val imgSrcUrl: String,
+    val type: String,
+    val price: Double
+) : Parcelable {
 
-        val imgSrcUrl: String,
+    val isRental
+        get() = type == "rent"
 
-        val type: String,
-        val price: Double): Parcelable {
-
-        val isRental
-                get() = type == "rent"
-
-        }
+}

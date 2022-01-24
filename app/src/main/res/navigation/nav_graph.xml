@@ -5,6 +5,6 @@
 
     <fragment
         android:id="@+id/overviewFragment"
-        android:name="com.example.recyclerviewlibrarydemo.OverviewFragment"
+        android:name="com.example.recyclerviewlibrarydemo.ui.views.OverviewFragment"
         android:label="OverviewFragment" />
 </navigation>

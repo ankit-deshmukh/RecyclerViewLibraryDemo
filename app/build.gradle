@@ -54,9 +54,6 @@ dependencies {
     // RecyclerView
     implementation "androidx.recyclerview:recyclerview:$version_recyclerview"
 
-    //Retrofit
-    implementation "com.squareup.retrofit2:retrofit: $version_retrofit"
-
     //Coroutines
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$version_kotlin_coroutines"
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$version_kotlin_coroutines"
@@ -72,4 +69,6 @@ dependencies {
 
     // Core with Ktx
     implementation "androidx.core:core-ktx:$version_core"
+
+    implementation project(':demoNetworkLibrary')
 }
